@@ -1,0 +1,197 @@
+ @charset "UTF8";
+
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+ @font-face{
+        font-family:android ; 
+        src: url('../fontes/idroid.otf') format('opentype')
+    
+        }
+  :root { /* ;:root é uma pseudo classe usada como árvore global para gurdar variaveis --.*/
+    --cor0: rgb(165, 249, 173);/* --variavel cor( dois traços -- são uma variavel em CSS*/
+    --cor1: rgb(115, 220, 103);
+    --cor2: rgb(52, 135, 34);
+    --cor3: rgb(60, 88, 16);
+    --cor4: rgb(34, 75, 15);
+    --cor5: rgb(30, 49, 9);
+
+    --fonte-padrao: Arial,Helvetiva,sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android:'android',cursive;
+  }
+ body{
+    background-color: #EBE6BE;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ a.externo::after{ /* a é link,o ponto(.) é classe,externo nome da classe,::after(depois ,apos)*/
+   content: '\00a0\1F517';/* content(conteudo) o \000a0\ é um codigo de espaço, 1F517 é o codigo do emoji*/
+    
+  }
+ header{
+    background-image: linear-gradient(to bottom,rgb(78, 129, 71),rgb(26, 51, 9));/*dedradê vertical*/
+    min-height: 150px;/* altura minima da caixa do header(cabeçario)*/
+    padding-top: 20px;/*distancia do texto para a borda interior superior*/
+    padding-bottom: 0px;/* distanci do texto para a borda iterior inferior*/
+    
+    
+   
+ }
+ header h1{
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    text-align: center;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.557);/* sombreamento do texto*/
+    padding-bottom: 20px;
+ }
+ header > p{ /* parágrafo dentro do header( cabeçário)*/
+    color: white;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+ }
+ nav {
+    background-color: rgb(13, 61, 13);
+    color: white;
+   box-shadow: 2px 2px 6px black;/*sombra da caixa(box) do menu*/
+   padding: 5px;/*geral do texto (cima,baixo,direita,esquerda*/
+   padding-left: 15px;
+      }
+ nav > a{ /* link(a) dentro do nav(navegador/menu)*/
+   color: white;/*cor do texto do menu*/
+   text-decoration: none;/*texto sem decoração*/
+  }
+
+   nav > a:hover{ /* link(a) dentro do nav(navgador/menu)*/
+      background-color: rgba(113, 145, 81, 0.87);/*quando passar o mouse a cor de fundo fica  verde*/
+       font-weight: bold;/* quando passar o mouse a letra(texto) muda para negrito*/
+       color: rgb(7, 62, 7);/* mudança da cor to texto quando passar o mouse
+      border-radius:2px 2px 1px 1px ;/*bordas(cantos) da caixa de texto com curvatura*/
+      transition: 0.5s;/* transição ( tempo para acontecer de mudança)*/
+     /* transition-duration: 1.5s; */
+      padding: 5PX;/* padding geral,distacias to texto para as bordas (cima,baixo,direita,esquerda)*/
+     }
+  
+ main{ /* conteudo principal (main)*/
+    background-color: white;
+    min-width: 360px;/* largura minima que a tela vai se adaptar(pc,tablet,cel)que estão no main*/
+    max-width:400px ;/* largura maxima que a tela vai se adaptar*/
+    margin: auto; /*margen centralizada*/
+    padding: 20px;/* padding: distacia do conteudo para a borda*/
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.747);
+    margin-bottom: 25px;/*distancia do texto para a margen inferior*/
+    border-radius: 0px 0px 4px 4px;/* bordas da caixa de texto com curvatura (angulos)*/
+    font-size: 14px;
+
+ }
+ main img{/* imagen dentro do main(principal)*/
+    width: 100%;/* largura maxima das img contidas no main (conteudo principal)*/
+ }
+main img .pequena{/* imagen pequena dentro do main, o .(ponto) é classe, (pequena) o nome da classe*/
+   max-width: 350;
+   display: block;/* imagen não é um bloco, para movimentar a img usar display:block; */
+   margin: auto;
+ }
+ main h1{
+    background-image: linear-gradient(to right, rgb(0, 255, 64), transparent);
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    text-shadow: 1px 1px 4px black;
+    font-size: 20px;
+    font-weight: normal;
+ padding-left: 5px;
+
+ }
+ main h2{
+    font-family: var(--fonte-android) ;
+    color:rgb(10, 42, 10);
+    text-shadow: 1px 1px 4px black;
+    font-size: 20px;
+ background-image: linear-gradient(to right, rgb(0, 255, 64), transparent);
+ padding-left: 3px;
+    }
+ main p{/* todos o paragrafos dentro do principal(main)*/
+
+   text-align: justify;/* alinhamento das bordas do parágrafo lado dereito e esquerdo*/
+   text-indent: 15px;
+   margin: 15px 0px;/* espaço do paragrafo para o titulo*/
+   line-height: 1.5em;/* espaçamento entre linhas do texto (sem espaço entre as linhas*/
+ }
+ 
+ main a{ /* main a/todos os links dentro do main(principal)*/
+   background-color: darkseagreen;
+   text-decoration: none;
+   color: green;
+   padding-left: 5px;
+   padding-right: 5px;
+ }
+ main a:hover{/* todos os links no main(:hover) /* atenção: a:hover e junto*/
+ background-color: rgb(203, 224, 13);
+ text-decoration:underline;
+ }
+ div.video{/* adaptação de videos do youtube ao tamanho desejado*/
+  margin-left: 20px;/* valores adaptaveis*/
+  padding-left: 20px;/* valores adaptaveis*/
+  padding: 76px;/* valores adaptaveis*/
+  position: relative;
+  padding-bottom: 41%;/* valores adaptaveis*/
+ }
+ div.video >iframe{/* adaptação de videos do youtube ao tamanho desejado*/
+  position: absolute;
+  top:-13px ;/* valores adaptaveis*/
+  left:-40px ;/* valores adaptaveis*/
+  width:440px ;/* valores adaptaveis*/
+  height:244px ;/* valores adaptaveis*/
+ }
+
+ footer{/* roda pé*/
+    background-color: rgb(30, 49, 9);
+    color: white;
+    text-align: center;
+    font-size: 15px;
+   padding: 5px;
+ }
+ *{    /*configuração global para deixar todas as margens com 0px; (todas as margens coladas sem espaço*/
+    margin: 0px;
+    padding: 0px;
+ }/* o *{   } seleciona todos o h1,h2,h3 ,p automaticamente*/
+ footer a:hover{
+   color: brown;
+   background-color: aliceblue;
+   text-decoration: none;
+}
+footer a {
+   text-decoration: none;
+   color: white;
+}
+aside{
+   background-color: rgb(119, 164, 134);
+   border-radius:10px 10px ;
+   padding-left: 10px;
+   font-size: 14px;
+   box-shadow: 5px 3px 3px 1px rgb(133 127 127 / 50%);
+   
+  }
+  aside > ul{
+   list-style: inside;/*lista para dentro*/
+   columns: 2;/*divide a lista em duas partes ou mais */
+   list-style-type: '\2714\00A0';
+   padding: 5px;
+}
+aside  h3{
+background-color: rgb(23, 101, 23);
+color: white;
+margin: -2px -1px 1px -1px;
+border-radius: 10px 10px 0px 0px;
+padding-top: 10px;
+margin-right:0px;
+padding-left: 14px;
+margin-left: -10px;
+padding-bottom: 5px;
+}
+aside  > p{
+   padding-right: 5px;
+}
+
+ 
+ 
