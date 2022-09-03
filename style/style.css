@@ -69,7 +69,9 @@
       border-radius:2px 2px 1px 1px ;/*bordas(cantos) da caixa de texto com curvatura*/
       transition: 0.5s;/* transição ( tempo para acontecer de mudança)*/
      /* transition-duration: 1.5s; */
-      padding: 5PX;/* padding geral,distacias to texto para as bordas (cima,baixo,direita,esquerda)*/
+      padding: 5PX;/* padding geral,distacias to texto para as bordas (cima,
+      baixo,direita,esquerda)*/
+      border-radius:3px 6px 0px 5px ;
      }
   
  main{ /* conteudo principal (main)*/
